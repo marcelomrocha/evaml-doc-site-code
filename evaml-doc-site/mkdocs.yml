@@ -1,0 +1,35 @@
+site_name: Emboddied Voice Assistant Markup Language (EvaML) Documentation
+
+theme:
+  name: material
+#  icon:
+#    logo: material/language-python
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js
+
+nav:
+  - Início: index.md
+  - Installing: instalacao.md
+  - Tutorial: tutorial.md
+  - Commands:
+      - Visão geral: comandos/index.md
+      - Controle de fluxo: comandos/controle.md
+      - Entrada/Saída: comandos/io.md
+      - Funções: comandos/funcoes.md
+      - Variáveis e Tipos: comandos/variaveis.md
+  - Exemplos:
+      - Introdução: exemplos/index.md
+      - Básicos: exemplos/basicos.md
+      - Avançados: exemplos/avancados.md
+      - Projetos: exemplos/projetos.md
+  - Real Scenarios:
+      - EVA Robot: comandos/funcoes.md
+      - FRED Robot: comandos/funcoes.md
+  - Referência rápida: referencia.md
+  - FAQ: faq.md
+  - Sobre: sobre.md
