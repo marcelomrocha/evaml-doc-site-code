@@ -17,3 +17,6 @@ A equação da reta é $y = mx + b$.
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+
+!!! info "Dica"
+    Você pode adicionar dicas em caixas bonitas!
