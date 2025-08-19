@@ -51,7 +51,8 @@ extra_css:
 
 
 nav:
-  - EvaML: index.md
+  - Home: index.md
+  - EvaML: home.md
   - Installation: installation.md
   - EvaML - Document Sections:
     - Document Sections: evaml-doc-sections/evaml-doc-sections.md
