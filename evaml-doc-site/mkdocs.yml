@@ -3,20 +3,18 @@ site_name: EvaML - Embodied Voice Assistant Markup Language - Documentation
 theme:
   name: "material"
   features:
+    - content.code.copy
     - content.code.annotate
+
   palette:
     - scheme: default
       primary: indigo
       accent: indigo
-      toggle:
-        icon: material/weather-night
-        name: Black mode
+
     - scheme: slate
       primary: indigo
       accent: indigo
-      toggle:
-        icon: material/weather-sunny
-        name: Modo claro
+
 
 plugins:
   - search
@@ -26,9 +24,6 @@ plugins:
 
 markdown_extensions:
   - pymdownx.inlinehilite
-
-  - pymdownx.highlight:
-      # linenums_style: inline
 
   - pymdownx.superfences
   - pymdownx.arithmatex:
@@ -52,13 +47,9 @@ extra_css:
 
 nav:
   - Home: index.md
-  - EvaML: home.md
-  - Installation: installation.md
-  - EvaML - Document Sections:
-    - Document Sections: evaml-doc-sections/evaml-doc-sections.md
-    - Settings: evaml-doc-sections/settings.md
-    - Script: evaml-doc-sections/script.md
-    - Macros: evaml-doc-sections/macros.md
+  - EvaML: evaml.md
+  # - Installation: installation.md
+  - EvaML - Document Sections: evaml-doc-sections.md
   - Commands:
       - Overview: comandos/index.md
       - Controle de fluxo: comandos/controle.md

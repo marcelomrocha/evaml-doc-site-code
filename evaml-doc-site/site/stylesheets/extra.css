@@ -7,17 +7,63 @@ p {
 }
 
 
-<style>
-  table {
-      border-collapse: collapse; /* evita linhas duplas */
-      width: 100%;
-  }
-  th, td {
-      border: 1px solid #100; /* cor da linha */
-      padding: 8px;
-      text-align: left;
-  }
-</style>
+/* Fundo Monokai clássico para blocos de código */
+.md-typeset pre code {
+  background-color: #ffffff !important; /* fundo escuro monokai */
+  color: #0c9ea0; /* cor padrão do texto */
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 1px;
+  padding: 1em;
+  display: block;
+  overflow-x: auto;
+  border: none !important;
+}
+
+/* Força o botão de copiar aparecer no canto superior direito */
+.md-clipboard {
+    display: block !important;
+    opacity: 1 !important;
+    right: 0.5em;
+    top: 0.5em;
+    background: #FFFFFF;
+    color: #c3c3c3;
+    border-radius: 2px;
+    padding: 4px 6px;
+}
+
+/* Inline code (``` dentro de frases) */
+.md-typeset code {
+  background-color: #f3f3f3 !important;
+/*   color: #f8f8f2; */
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
+
+/* Destaque de linhas em blocos de código */
+.md-typeset .highlight .hll {
+  background-color: #fffad2 !important; /* fundo levemente mais claro no monokai */
+  display: block;
+  width: 100%;
+}
+
+
+/* Regras de sintaxe (Monokai) */
+.highlight .nt { color: #ca54a6; } /* nome da tag */
+.highlight .na { color: #1117ff; } /* atributo */
+.highlight .s  { color: #4bb6be; } /* valor do atributo */
+.highlight .c  { color: #75715E; font-style: italic; } /* comentários */
+.highlight .m  { color: #AE81FF; } /* números */
+.highlight .k  { color: #F92672; } /* palavras-chave */
+.highlight .o  { color: #F92672; } /* operadores */
+
+
+
+
+
+
+/* font-size: 0.85em;  */
 
 
 <style>
@@ -26,18 +72,23 @@ p {
       width: 100%;
       font-family: Arial, sans-serif;
   }
-  table.commands th, table.commands td {
-      border: 1px solid #d3d3d3; /* bordas verticais e horizontais */
-      padding: 8px;
+  table.commands td {
+      border: 1px solid #dadada; /* bordas verticais e horizontais */
+      padding: 6px;
       text-align: left;
+      font-size: 0.95em;
   }
   table.commands th {
-      background-color: #f2f2f2; /* cabeçalho com cor de fundo */
+      padding: 8px;
+      background-color: #e4f4ff; /* cabeçalho com cor de fundo */
       text-align: center;
+      font-size: 0.95em;
+      /*border-bottom: 1px solid #999;*/
   }
-  table.commands tr:nth-child(even) {
+/*  table.commands tr:nth-child(even) {
       background-color: #fafafa; /* linhas alternadas */
-  }
+  }*/
+
 </style>
 
 
