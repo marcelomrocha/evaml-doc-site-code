@@ -8,7 +8,7 @@ and `<macros>`.
   <img src="../img/evaml-sections-manual.png" alt="Create User Diagram" width="400"/>
 </p> -->
 
-![Create User Diagram](../img/evaml-sections-manual.png)
+![evaml-sections-manual.png](./img/evaml-sections-manual.png)
 
 
 Table 2.1 shows the root element of the EvaML document (`<evaml>`) and the elements `<settings>`, `<script>` and `<macros>` that represent the sections of the document. You can also observe the attributes of each element and its contents. In the attribute column, an underlined attribute indicates that it should be used. In the column of contents, occurrence indicators are used to indicate the order and number of times an element can occur. The "," (comma) symbol indicates that all child elements listed must be used in the sequence shown. The "|" (pipe bar) indicates that either element can occur within the parent element. The "+" (plus sign) symbol, on the other hand, indicates that the child element must appear one or more times. The "*" (asterisk) symbol indicates that the element may be used zero or more times within the parent element. The "?" (question mark) indicates that the element is optional, the element may not exist or there is only one occurrence of it.

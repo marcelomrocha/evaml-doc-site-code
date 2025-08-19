@@ -744,7 +744,7 @@ and <code>&lt;macros&gt;</code>.</p>
   <img src="../img/evaml-sections-manual.png" alt="Create User Diagram" width="400"/>
 </p> -->
 
-<p><img alt="Create User Diagram" src="../img/evaml-sections-manual.png" /></p>
+<p><img alt="evaml-sections-manual.png" src="../img/evaml-sections-manual.png" /></p>
 <p>Table 2.1 shows the root element of the EvaML document (<code>&lt;evaml&gt;</code>) and the elements <code>&lt;settings&gt;</code>, <code>&lt;script&gt;</code> and <code>&lt;macros&gt;</code> that represent the sections of the document. You can also observe the attributes of each element and its contents. In the attribute column, an underlined attribute indicates that it should be used. In the column of contents, occurrence indicators are used to indicate the order and number of times an element can occur. The "," (comma) symbol indicates that all child elements listed must be used in the sequence shown. The "|" (pipe bar) indicates that either element can occur within the parent element. The "+" (plus sign) symbol, on the other hand, indicates that the child element must appear one or more times. The "*" (asterisk) symbol indicates that the element may be used zero or more times within the parent element. The "?" (question mark) indicates that the element is optional, the element may not exist or there is only one occurrence of it.</p>
 <table class="commands">
   <tr>
@@ -803,9 +803,9 @@ the definitions of its individual elements. Here is an example from the <code>&l
 <span class="normal">5</span>
 <span class="normal">6</span>
 <span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;script&gt;</span>
-<span class="hll"><span class="w">  </span><span class="nt">&lt;light</span><span class="w"> </span><span class="na">state=</span><span class="s">&quot;ON&quot;</span><span class="w"> </span><span class="na">color=</span><span class="s">&quot;BLUE&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-</span><span class="w">  </span><span class="nt">&lt;talk&gt;</span>Hi,<span class="w"> </span>I<span class="w"> </span>am<span class="w"> </span>robot<span class="w"> </span>EVA<span class="nt">&lt;/talk&gt;</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="hll"><span class="nt">&lt;script&gt;</span>
+</span><span class="w">  </span><span class="nt">&lt;light</span><span class="w"> </span><span class="na">state=</span><span class="s">&quot;ON&quot;</span><span class="w"> </span><span class="na">color=</span><span class="s">&quot;BLUE&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;talk&gt;</span>Hi,<span class="w"> </span>I<span class="w"> </span>am<span class="w"> </span>robot<span class="w"> </span>EVA<span class="nt">&lt;/talk&gt;</span>
 <span class="w">  </span><span class="nt">&lt;wait</span><span class="w"> </span><span class="na">duration=</span><span class="s">&quot;2000&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
 <span class="hll"><span class="w">  </span><span class="nt">&lt;audio</span><span class="w"> </span><span class="na">source=</span><span class="s">&quot;mario-start&quot;</span><span class="w"> </span><span class="na">block=</span><span class="s">&quot;TRUE&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
 </span><span class="w">  </span><span class="nt">&lt;talk&gt;</span>Bye<span class="nt">&lt;/talk&gt;</span>

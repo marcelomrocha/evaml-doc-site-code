@@ -1,2 +1,2 @@
-![Create User Diagram](./img/evaml-logo.png)
+![evaml-logo.png](./img/evaml-logo.png)
 # 
