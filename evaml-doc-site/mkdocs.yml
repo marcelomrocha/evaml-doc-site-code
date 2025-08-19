@@ -1,41 +1,72 @@
-site_name: Emboddied Voice Assistant Markup Language (EvaML) Documentation
+site_name: Embodied Voice Assistant Markup Language (EvaML) Documentation
 
 theme:
-  name: material
-#  icon:
-#    logo: material/language-python
+  name: "material"
+  features:
+    - content.code.annotate
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Black mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
+
+plugins:
+  - search
+  - bibtex:
+      bib_file: "refs.bib"
+
 
 markdown_extensions:
+  - pymdownx.inlinehilite
+
+  - pymdownx.highlight:
+      # linenums_style: inline
+
+  - pymdownx.superfences
   - pymdownx.arithmatex:
       generic: true
   - admonition
-  - codehilite
   - footnotes
   - tables
   - toc:
       permalink: true
+  - footnotes
+  - attr_list
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js
 
+
+extra_css:
+  - stylesheets/extra.css
+
+
+
 nav:
-  - Início: index.md
-  - Installing: instalacao.md
-  - Tutorial: tutorial.md
+  - EvaML: index.md
+  - Installation: installation.md
+  - EvaML - Document Sections:
+    - Document Sections: evaml-doc-sections/evaml-doc-sections.md
+    - Settings: evaml-doc-sections/settings.md
+    - Script: evaml-doc-sections/script.md
+    - Macros: evaml-doc-sections/macros.md
   - Commands:
-      - Visão geral: comandos/index.md
+      - Overview: comandos/index.md
       - Controle de fluxo: comandos/controle.md
       - Entrada/Saída: comandos/io.md
       - Funções: comandos/funcoes.md
       - Variáveis e Tipos: comandos/variaveis.md
-  - Exemplos:
-      - Introdução: exemplos/index.md
-      - Básicos: exemplos/basicos.md
-      - Avançados: exemplos/avancados.md
-      - Projetos: exemplos/projetos.md
   - Real Scenarios:
       - EVA Robot: comandos/funcoes.md
       - FRED Robot: comandos/funcoes.md
-  - Referência rápida: referencia.md
+  - Quick Reference:: referencia.md
   - FAQ: faq.md
-  - Sobre: sobre.md
+  - About: sobre.md

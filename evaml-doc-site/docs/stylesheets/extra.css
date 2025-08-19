@@ -1,0 +1,43 @@
+.justify-text {
+    text-align: justify;
+} 
+
+p {
+  text-align: justify;
+}
+
+
+<style>
+  table {
+      border-collapse: collapse; /* evita linhas duplas */
+      width: 100%;
+  }
+  th, td {
+      border: 1px solid #100; /* cor da linha */
+      padding: 8px;
+      text-align: left;
+  }
+</style>
+
+
+<style>
+  table.commands {
+      border-collapse: collapse; /* linhas contínuas */
+      width: 100%;
+      font-family: Arial, sans-serif;
+  }
+  table.commands th, table.commands td {
+      border: 1px solid #d3d3d3; /* bordas verticais e horizontais */
+      padding: 8px;
+      text-align: left;
+  }
+  table.commands th {
+      background-color: #f2f2f2; /* cabeçalho com cor de fundo */
+      text-align: center;
+  }
+  table.commands tr:nth-child(even) {
+      background-color: #fafafa; /* linhas alternadas */
+  }
+</style>
+
+
