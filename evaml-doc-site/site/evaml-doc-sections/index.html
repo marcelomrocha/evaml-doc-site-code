@@ -737,11 +737,13 @@
 
 
 <h1 id="evaml-document-sections">EvaML - Document Sections<a class="headerlink" href="#evaml-document-sections" title="Permanent link">&para;</a></h1>
-<p>We can see in Figure 2.1 an EvaML script that shows the document root element <code>&lt;evaml&gt;</code>, with its name
+<p>We can see in the next figure an EvaML script that shows the document root element <code>&lt;evaml&gt;</code>, with its <code>name</code>
 attribute that defines the script name, and which contains the following three elements: the <code>&lt;settings&gt;</code>, <code>&lt;script&gt;</code>
 and <code>&lt;macros&gt;</code>.</p>
 <p><img alt="evaml-sections-manual.png" src="../img/evaml-sections-manual.png" /></p>
-<p>Table 2.1 shows the root element of the EvaML document (<code>&lt;evaml&gt;</code>) and the elements <code>&lt;settings&gt;</code>, <code>&lt;script&gt;</code> and <code>&lt;macros&gt;</code> that represent the sections of the document. You can also observe the attributes of each element and its contents. In the attribute column, an underlined attribute indicates that it should be used. In the column of contents, occurrence indicators are used to indicate the order and number of times an element can occur. The "," (comma) symbol indicates that all child elements listed must be used in the sequence shown. The "|" (pipe bar) indicates that either element can occur within the parent element. The "+" (plus sign) symbol, on the other hand, indicates that the child element must appear one or more times. The "*" (asterisk) symbol indicates that the element may be used zero or more times within the parent element. The "?" (question mark) indicates that the element is optional, the element may not exist or there is only one occurrence of it.</p>
+<div style="text-align: center;"><b>Figure</b>: EvaML - Document Sections</div>
+<p><br></p>
+<p>The following table shows the root element of the EvaML document (<code>&lt;evaml&gt;</code>) and the elements <code>&lt;settings&gt;</code>, <code>&lt;script&gt;</code> and <code>&lt;macros&gt;</code> that represent the sections of the document. You can also observe the attributes of each element and its contents. In the attribute <strong>column</strong>, an underlined attribute indicates that it should be used. In the column of <strong>contents</strong>, occurrence indicators are used to indicate the order and number of times an element can occur. The "," (comma) symbol indicates that all child elements listed must be used in the sequence shown. The "|" (pipe bar) indicates that either element can occur within the parent element. The "+" (plus sign) symbol, on the other hand, indicates that the child element must appear one or more times. The "*" (asterisk) symbol indicates that the element may be used zero or more times within the parent element. The "?" (question mark) indicates that the element is optional, the element may not exist or there is only one occurrence of it.</p>
 <table class="commands">
   <tr>
     <th><b>Element</b></th>
@@ -769,15 +771,11 @@ and <code>&lt;macros&gt;</code>.</p>
     <td>(macro+)</td>
   </tr>
 </table>
-
 <p style="text-align: center;"><b>Table</b>: EvaML - Document Elements (Root and Main Elements)</p>
 
 <h2 id="settings-section">Settings Section<a class="headerlink" href="#settings-section" title="Permanent link">&para;</a></h2>
-<p>In this first section, some global characteristics of the script are defined in the <code>&lt;settings&gt;</code> element. It is
-possible to define how the voice tone and the language in which the robot will communicate. It is also possible
-to define whether the generated code will perform light effects, sound effects or even play music. By configuring
-these parameters, it is possible to globally modify the operation of the script without having to directly change
-the definitions of its individual elements. Here is an example from the <code>&lt;settings&gt;</code> element.</p>
+<p>In this section, some global characteristics of the script are defined in the <code>&lt;settings&gt;</code> element. It is possible to define how the voice tone and the language in which the robot will communicate. It is also possible to define whether the generated code will perform light effects, sound effects or even play music. By configuring
+these parameters, it is possible to globally modify the operation of the script without having to directly change the definitions of its individual elements. Here is an example from the <code>&lt;settings&gt;</code> element.</p>
 <!-- hl_lines="2 3" -->
 <div class="highlight"><span class="filename">settings_example.xml</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">&lt;settings&gt;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">&lt;voice</span><span class="w"> </span><span class="na">tone=</span><span class="s">&quot;en-US_AllisonV3Voice&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
@@ -786,7 +784,7 @@ the definitions of its individual elements. Here is an example from the <code>&l
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nt">&lt;/settings&gt;</span>
 </code></pre></div>
 <h2 id="script-section">Script Section<a class="headerlink" href="#script-section" title="Permanent link">&para;</a></h2>
-<p>The <code>&lt;script&gt;</code> element contains the sequence of commands that the robot must execute. We can see some of them on following code snippet. We can see in line 2 of the script, the <code>&lt;light&gt;</code> command that lights the smart bulb setting its color to blue. Next we have the <code>&lt;talk&gt;</code> command, which makes the robot say something, for example, introducing itself. The <code>&lt;wait&gt;</code> command on line 4 causes the script to pause for 2000 ms (2s). In the next line, the <code>&lt;audio&gt;</code> command plays an audio file named "mario-start". Then the robot speaks "bye" and turns off the smart bulb. A detailed explanation of each of these commands will be presented in Section 2.3.</p>
+<p>The <code>&lt;script&gt;</code> section contains the sequence of commands that the robot must execute. We can see some of them on following code snippet. We can see in line 2 of the script, the <code>&lt;light&gt;</code> command that lights the smart bulb setting its color to blue. Next we have the <code>&lt;talk&gt;</code> command, which makes the robot say something, for example, introducing itself. The <code>&lt;wait&gt;</code> command on line 4 causes the script to pause for 2000 ms (2s). In the next line, the <code>&lt;audio&gt;</code> command plays an audio file named "mario-start". Then the robot speaks "Bye" and turns off the smart bulb.</p>
 <!-- hl_lines="2 3" -->
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">script_example.xml</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
 <span class="normal"><a href="#__codelineno-1-2">2</a></span>
@@ -805,7 +803,7 @@ the definitions of its individual elements. Here is an example from the <code>&l
 <a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="nt">&lt;/script&gt;</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="macros-section">Macros Section<a class="headerlink" href="#macros-section" title="Permanent link">&para;</a></h2>
-<p>The <code>&lt;macros&gt;</code> element is one of the abstractions created in the EvaML language. As you can see in the next code snippet, it is possible to create macros that can be referenced within the <code>&lt;script&gt;</code> element. A macro has the id attribute that serves to identify it. These macros can be used within the <code>&lt;script&gt;</code> section using the <code>&lt;useMacro&gt;</code> command. The macro attribute of the command <code>&lt;useMacro&gt;</code> references the <code>&lt;macro&gt;</code> element defined in the <code>&lt;macros&gt;</code> section. During the parsing process of the EvaML document, macros are expanded with their code in the <code>&lt;script&gt;</code> section. There is no limit to the number of macros created, nor to the number of references to these macros within the script. As can be seen in Table 2.1 the macros section is not mandatory.</p>
+<p>The <code>&lt;macros&gt;</code> section is one of the abstractions created in the EvaML language. As you can see in the next code snippet, it is possible to create macros that can be referenced within the <code>&lt;script&gt;</code> element. A macro has the <code>id</code> attribute that serves to identify it. These macros can be used within the <code>&lt;script&gt;</code> section using the <code>&lt;useMacro&gt;</code> command. The <code>macro</code> attribute of the command <code>&lt;useMacro&gt;</code> references the <code>&lt;macro&gt;</code> element defined in the <code>&lt;macros&gt;</code> section. During the parsing process of the EvaML document, macros are expanded with their code in the <code>&lt;script&gt;</code> section. There is no limit to the number of macros created, nor to the number of references to these macros within the script. As can be seen in the table above, the <code>&lt;macros&gt;</code> section is not mandatory.</p>
 <!-- hl_lines="2 3" -->
 <div class="highlight"><span class="filename">macros_example.xml</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">&lt;script&gt;</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">&lt;useMacro</span><span class="w"> </span><span class="na">macro=</span><span class="s">&quot;START&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>

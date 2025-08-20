@@ -15,16 +15,15 @@ p {
 
 /* Fundo Monokai clássico para blocos de código */
 .md-typeset pre code {
-  background-color: #ffffff !important; /* fundo escuro monokai */
+  background-color: #fafafa !important; /* fundo escuro monokai */
   color: #000000; /* cor padrão do texto */
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   font-size: 15px;
   line-height: 1.5;
-  border-radius: 1px;
+  border-radius: 15px;
   padding: 1em;
   display: block;
   overflow-x: auto;
-  border: none !important;
 }
 
 .md-typeset .highlighttable .linenodiv pre {
@@ -47,7 +46,6 @@ p {
 /* Inline code (``` dentro de frases) */
 .md-typeset code {
   background-color: #f3f3f3 !important;
-/*   color: #f8f8f2; */
   padding: 0.2em 0.4em;
   border-radius: 4px;
 }
@@ -73,8 +71,6 @@ p {
 
 
 
-
-/* font-size: 0.85em;  */
 
 
 <style>
