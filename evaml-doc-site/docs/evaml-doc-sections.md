@@ -4,10 +4,6 @@ We can see in Figure 2.1 an EvaML script that shows the document root element `<
 attribute that defines the script name, and which contains the following three elements: the `<settings>`, `<script>`
 and `<macros>`.
 
-<!-- <p align="center">
-  <img src="../img/evaml-sections-manual.png" alt="Create User Diagram" width="400"/>
-</p> -->
-
 ![evaml-sections-manual.png](./img/evaml-sections-manual.png)
 
 
@@ -53,11 +49,11 @@ these parameters, it is possible to globally modify the operation of the script 
 the definitions of its individual elements. Here is an example from the `<settings>` element.
 
 <!-- hl_lines="2 3" -->
-```xml title="settings_example.xml" linenums="1" 
+```xml title="settings_example.xml" linenums="0"
 <settings>
-    <voice tone=”en-US_AllisonV3Voice” />
-    <lightEffects mode=”ON” />
-    <audioEffects mode=”ON” />
+    <voice tone="en-US_AllisonV3Voice" />
+    <lightEffects mode="ON" />
+    <audioEffects mode="ON" />
 </settings>
 ```
 
@@ -67,7 +63,7 @@ the definitions of its individual elements. Here is an example from the `<settin
 The `<script>` element contains the sequence of commands that the robot must execute. We can see some of them on following code snippet. We can see in line 2 of the script, the `<light>` command that lights the smart bulb setting its color to blue. Next we have the `<talk>` command, which makes the robot say something, for example, introducing itself. The `<wait>` command on line 4 causes the script to pause for 2000 ms (2s). In the next line, the `<audio>` command plays an audio file named "mario-start". Then the robot speaks "bye" and turns off the smart bulb. A detailed explanation of each of these commands will be presented in Section 2.3.
 
 <!-- hl_lines="2 3" -->
-```xml title="script_example.xml" linenums="1" hl_lines="1 5" 
+```xml title="script_example.xml" linenums="1" hl_lines="2 4" 
 <script>
   <light state="ON" color="BLUE" />
   <talk>Hi, I am robot EVA</talk>
@@ -84,7 +80,7 @@ The `<script>` element contains the sequence of commands that the robot must exe
 The `<macros>` element is one of the abstractions created in the EvaML language. As you can see in the next code snippet, it is possible to create macros that can be referenced within the `<script>` element. A macro has the id attribute that serves to identify it. These macros can be used within the `<script>` section using the `<useMacro>` command. The macro attribute of the command `<useMacro>` references the `<macro>` element defined in the `<macros>` section. During the parsing process of the EvaML document, macros are expanded with their code in the `<script>` section. There is no limit to the number of macros created, nor to the number of references to these macros within the script. As can be seen in Table 2.1 the macros section is not mandatory.
 
 <!-- hl_lines="2 3" -->
-```xml title="macros_example.xml" linenums="1" 
+```xml title="macros_example.xml" linenums="0" 
 <script>
   <useMacro macro="START" />
 </script>

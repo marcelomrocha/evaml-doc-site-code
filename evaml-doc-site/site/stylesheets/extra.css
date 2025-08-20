@@ -6,19 +6,30 @@ p {
   text-align: justify;
 }
 
+/* Remove o nome do site do topo do menu lateral */
+/* .md-nav__title {
+    display: none !important;
+} */
+
+
 
 /* Fundo Monokai clássico para blocos de código */
 .md-typeset pre code {
   background-color: #ffffff !important; /* fundo escuro monokai */
-  color: #0c9ea0; /* cor padrão do texto */
+  color: #000000; /* cor padrão do texto */
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.5;
   border-radius: 1px;
   padding: 1em;
   display: block;
   overflow-x: auto;
   border: none !important;
+}
+
+.md-typeset .highlighttable .linenodiv pre {
+  font-size: inherit !important;
+  line-height: 1.53
 }
 
 /* Força o botão de copiar aparecer no canto superior direito */
@@ -50,11 +61,11 @@ p {
 
 
 /* Regras de sintaxe (Monokai) */
-.highlight .nt { color: #ca54a6; } /* nome da tag */
-.highlight .na { color: #1117ff; } /* atributo */
-.highlight .s  { color: #4bb6be; } /* valor do atributo */
+.highlight .nt { color: #0b8585; } /* nome da tag */
+.highlight .na { color: #445588; font-weight: bold; }/* atributo */
+.highlight .s  { color: #df1c4d; } /* valor do atributo */
 .highlight .c  { color: #75715E; font-style: italic; } /* comentários */
-.highlight .m  { color: #AE81FF; } /* números */
+.highlight .m  { color: #000000; } /* números */
 .highlight .k  { color: #F92672; } /* palavras-chave */
 .highlight .o  { color: #F92672; } /* operadores */
 
@@ -85,10 +96,9 @@ p {
       font-size: 0.95em;
       /*border-bottom: 1px solid #999;*/
   }
-/*  table.commands tr:nth-child(even) {
-      background-color: #fafafa; /* linhas alternadas */
-  }*/
+
+  /* table.commands tr:nth-child(odd) {
+      background-color: #eeeeee; /* linhas alternadas */
+  /* } */
 
 </style>
-
-

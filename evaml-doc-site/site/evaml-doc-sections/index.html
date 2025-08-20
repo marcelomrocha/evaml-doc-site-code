@@ -18,7 +18,7 @@
     
     
       
-        <title>EvaML - Document Sections - EvaML - Embodied Voice Assistant Markup Language - Documentation</title>
+        <title>EvaML - Document Sections - EvaML - Embodied Voice Assistant Markup Language</title>
       
     
     
@@ -88,7 +88,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="EvaML - Embodied Voice Assistant Markup Language - Documentation" class="md-header__button md-logo" aria-label="EvaML - Embodied Voice Assistant Markup Language - Documentation" data-md-component="logo">
+    <a href=".." title="EvaML - Embodied Voice Assistant Markup Language" class="md-header__button md-logo" aria-label="EvaML - Embodied Voice Assistant Markup Language" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -102,7 +102,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            EvaML - Embodied Voice Assistant Markup Language - Documentation
+            EvaML - Embodied Voice Assistant Markup Language
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -204,13 +204,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="EvaML - Embodied Voice Assistant Markup Language - Documentation" class="md-nav__button md-logo" aria-label="EvaML - Embodied Voice Assistant Markup Language - Documentation" data-md-component="logo">
+    <a href=".." title="EvaML - Embodied Voice Assistant Markup Language" class="md-nav__button md-logo" aria-label="EvaML - Embodied Voice Assistant Markup Language" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    EvaML - Embodied Voice Assistant Markup Language - Documentation
+    EvaML - Embodied Voice Assistant Markup Language
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -740,10 +740,6 @@
 <p>We can see in Figure 2.1 an EvaML script that shows the document root element <code>&lt;evaml&gt;</code>, with its name
 attribute that defines the script name, and which contains the following three elements: the <code>&lt;settings&gt;</code>, <code>&lt;script&gt;</code>
 and <code>&lt;macros&gt;</code>.</p>
-<!-- <p align="center">
-  <img src="../img/evaml-sections-manual.png" alt="Create User Diagram" width="400"/>
-</p> -->
-
 <p><img alt="evaml-sections-manual.png" src="../img/evaml-sections-manual.png" /></p>
 <p>Table 2.1 shows the root element of the EvaML document (<code>&lt;evaml&gt;</code>) and the elements <code>&lt;settings&gt;</code>, <code>&lt;script&gt;</code> and <code>&lt;macros&gt;</code> that represent the sections of the document. You can also observe the attributes of each element and its contents. In the attribute column, an underlined attribute indicates that it should be used. In the column of contents, occurrence indicators are used to indicate the order and number of times an element can occur. The "," (comma) symbol indicates that all child elements listed must be used in the sequence shown. The "|" (pipe bar) indicates that either element can occur within the parent element. The "+" (plus sign) symbol, on the other hand, indicates that the child element must appear one or more times. The "*" (asterisk) symbol indicates that the element may be used zero or more times within the parent element. The "?" (question mark) indicates that the element is optional, the element may not exist or there is only one occurrence of it.</p>
 <table class="commands">
@@ -783,58 +779,45 @@ to define whether the generated code will perform light effects, sound effects o
 these parameters, it is possible to globally modify the operation of the script without having to directly change
 the definitions of its individual elements. Here is an example from the <code>&lt;settings&gt;</code> element.</p>
 <!-- hl_lines="2 3" -->
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">settings_example.xml</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;settings&gt;</span>
-<span class="w">    </span><span class="nt">&lt;voice</span><span class="w"> </span><span class="na">tone=</span><span class="s">”en-US_AllisonV3Voice”</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;lightEffects</span><span class="w"> </span><span class="na">mode=</span><span class="s">”ON”</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;audioEffects</span><span class="w"> </span><span class="na">mode=</span><span class="s">”ON”</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="nt">&lt;/settings&gt;</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><span class="filename">settings_example.xml</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">&lt;settings&gt;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">&lt;voice</span><span class="w"> </span><span class="na">tone=</span><span class="s">&quot;en-US_AllisonV3Voice&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">&lt;lightEffects</span><span class="w"> </span><span class="na">mode=</span><span class="s">&quot;ON&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nt">&lt;audioEffects</span><span class="w"> </span><span class="na">mode=</span><span class="s">&quot;ON&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nt">&lt;/settings&gt;</span>
+</code></pre></div>
 <h2 id="script-section">Script Section<a class="headerlink" href="#script-section" title="Permanent link">&para;</a></h2>
 <p>The <code>&lt;script&gt;</code> element contains the sequence of commands that the robot must execute. We can see some of them on following code snippet. We can see in line 2 of the script, the <code>&lt;light&gt;</code> command that lights the smart bulb setting its color to blue. Next we have the <code>&lt;talk&gt;</code> command, which makes the robot say something, for example, introducing itself. The <code>&lt;wait&gt;</code> command on line 4 causes the script to pause for 2000 ms (2s). In the next line, the <code>&lt;audio&gt;</code> command plays an audio file named "mario-start". Then the robot speaks "bye" and turns off the smart bulb. A detailed explanation of each of these commands will be presented in Section 2.3.</p>
 <!-- hl_lines="2 3" -->
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">script_example.xml</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="hll"><span class="nt">&lt;script&gt;</span>
-</span><span class="w">  </span><span class="nt">&lt;light</span><span class="w"> </span><span class="na">state=</span><span class="s">&quot;ON&quot;</span><span class="w"> </span><span class="na">color=</span><span class="s">&quot;BLUE&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;talk&gt;</span>Hi,<span class="w"> </span>I<span class="w"> </span>am<span class="w"> </span>robot<span class="w"> </span>EVA<span class="nt">&lt;/talk&gt;</span>
-<span class="w">  </span><span class="nt">&lt;wait</span><span class="w"> </span><span class="na">duration=</span><span class="s">&quot;2000&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="hll"><span class="w">  </span><span class="nt">&lt;audio</span><span class="w"> </span><span class="na">source=</span><span class="s">&quot;mario-start&quot;</span><span class="w"> </span><span class="na">block=</span><span class="s">&quot;TRUE&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-</span><span class="w">  </span><span class="nt">&lt;talk&gt;</span>Bye<span class="nt">&lt;/talk&gt;</span>
-<span class="w">  </span><span class="nt">&lt;light</span><span class="w"> </span><span class="na">state=</span><span class="s">&quot;OFF&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="nt">&lt;/script&gt;</span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">script_example.xml</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span>
+<span class="normal"><a href="#__codelineno-1-7">7</a></span>
+<span class="normal"><a href="#__codelineno-1-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nt">&lt;script&gt;</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="hll"><span class="w">  </span><span class="nt">&lt;light</span><span class="w"> </span><span class="na">state=</span><span class="s">&quot;ON&quot;</span><span class="w"> </span><span class="na">color=</span><span class="s">&quot;BLUE&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+</span><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">  </span><span class="nt">&lt;talk&gt;</span>Hi,<span class="w"> </span>I<span class="w"> </span>am<span class="w"> </span>robot<span class="w"> </span>EVA<span class="nt">&lt;/talk&gt;</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="hll"><span class="w">  </span><span class="nt">&lt;wait</span><span class="w"> </span><span class="na">duration=</span><span class="s">&quot;2000&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+</span><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">  </span><span class="nt">&lt;audio</span><span class="w"> </span><span class="na">source=</span><span class="s">&quot;mario-start&quot;</span><span class="w"> </span><span class="na">block=</span><span class="s">&quot;TRUE&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">  </span><span class="nt">&lt;talk&gt;</span>Bye<span class="nt">&lt;/talk&gt;</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">  </span><span class="nt">&lt;light</span><span class="w"> </span><span class="na">state=</span><span class="s">&quot;OFF&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="nt">&lt;/script&gt;</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="macros-section">Macros Section<a class="headerlink" href="#macros-section" title="Permanent link">&para;</a></h2>
 <p>The <code>&lt;macros&gt;</code> element is one of the abstractions created in the EvaML language. As you can see in the next code snippet, it is possible to create macros that can be referenced within the <code>&lt;script&gt;</code> element. A macro has the id attribute that serves to identify it. These macros can be used within the <code>&lt;script&gt;</code> section using the <code>&lt;useMacro&gt;</code> command. The macro attribute of the command <code>&lt;useMacro&gt;</code> references the <code>&lt;macro&gt;</code> element defined in the <code>&lt;macros&gt;</code> section. During the parsing process of the EvaML document, macros are expanded with their code in the <code>&lt;script&gt;</code> section. There is no limit to the number of macros created, nor to the number of references to these macros within the script. As can be seen in Table 2.1 the macros section is not mandatory.</p>
 <!-- hl_lines="2 3" -->
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">macros_example.xml</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;script&gt;</span>
-<span class="w">  </span><span class="nt">&lt;useMacro</span><span class="w"> </span><span class="na">macro=</span><span class="s">&quot;START&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="nt">&lt;/script&gt;</span>
-<span class="nt">&lt;macros&gt;</span>
-<span class="w">  </span><span class="nt">&lt;macro</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;START&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;talk&gt;</span>Hello,<span class="w"> </span>I&#39;m<span class="w"> </span>robot<span class="w"> </span>Eva.<span class="w"> </span>I&#39;ll<span class="w"> </span>pick<span class="w"> </span>a<span class="w"> </span>number<span class="w"> </span>from<span class="w"> </span>one<span class="w"> </span>to<span class="w"> </span>four<span class="nt">&lt;/talk&gt;</span>
-<span class="w">    </span><span class="nt">&lt;talk&gt;</span>For<span class="w"> </span>each<span class="w"> </span>one,<span class="w"> </span>I&#39;ll<span class="w"> </span>turn<span class="w"> </span>the<span class="w"> </span>bulb<span class="w"> </span>on<span class="w"> </span>in<span class="w"> </span>a<span class="w"> </span>different<span class="w"> </span>color<span class="nt">&lt;/talk&gt;</span>
-<span class="w">    </span><span class="nt">&lt;talk&gt;</span>I<span class="w"> </span>will<span class="w"> </span>only<span class="w"> </span>terminate<span class="w"> </span>when<span class="w"> </span>the<span class="w"> </span>number<span class="w"> </span>drawn<span class="w"> </span>is<span class="w"> </span>three<span class="nt">&lt;/talk&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/macro&gt;</span>
-<span class="nt">&lt;/macros&gt;</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><span class="filename">macros_example.xml</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">&lt;script&gt;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">&lt;useMacro</span><span class="w"> </span><span class="na">macro=</span><span class="s">&quot;START&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nt">&lt;/script&gt;</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nt">&lt;macros&gt;</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="nt">&lt;macro</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;START&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="nt">&lt;talk&gt;</span>Hello,<span class="w"> </span>I&#39;m<span class="w"> </span>robot<span class="w"> </span>Eva.<span class="w"> </span>I&#39;ll<span class="w"> </span>pick<span class="w"> </span>a<span class="w"> </span>number<span class="w"> </span>from<span class="w"> </span>one<span class="w"> </span>to<span class="w"> </span>four<span class="nt">&lt;/talk&gt;</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="nt">&lt;talk&gt;</span>For<span class="w"> </span>each<span class="w"> </span>one,<span class="w"> </span>I&#39;ll<span class="w"> </span>turn<span class="w"> </span>the<span class="w"> </span>bulb<span class="w"> </span>on<span class="w"> </span>in<span class="w"> </span>a<span class="w"> </span>different<span class="w"> </span>color<span class="nt">&lt;/talk&gt;</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="nt">&lt;talk&gt;</span>I<span class="w"> </span>will<span class="w"> </span>only<span class="w"> </span>terminate<span class="w"> </span>when<span class="w"> </span>the<span class="w"> </span>number<span class="w"> </span>drawn<span class="w"> </span>is<span class="w"> </span>three<span class="nt">&lt;/talk&gt;</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span><span class="nt">&lt;/macro&gt;</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="nt">&lt;/macros&gt;</span>
+</code></pre></div>
 
 
 
