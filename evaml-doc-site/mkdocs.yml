@@ -52,12 +52,15 @@ nav:
   - EvaML: evaml.md
   # - Installation: installation.md
   - EvaML - Document Sections: evaml-doc-sections.md
-  - Commands:
-      - Overview: comandos/index.md
-      - Controle de fluxo: comandos/controle.md
-      - Entrada/Saída: comandos/io.md
-      - Funções: comandos/funcoes.md
-      - Variáveis e Tipos: comandos/variaveis.md
+  - EvaML - Commands:
+      - Overview: commands/overview.md
+      - voice: commands/voice.md
+      - random: commands/random.md
+      - wait: commands/wait.md
+      - talk: commands/talk.md
+      - stop: commands/stop.md
+      - light: commands/light.md
+      - goto: commands/goto.md
   - Real Scenarios:
       - EVA Robot: comandos/funcoes.md
       - FRED Robot: comandos/funcoes.md

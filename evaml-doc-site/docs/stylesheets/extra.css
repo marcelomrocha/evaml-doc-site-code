@@ -59,17 +59,13 @@ p {
 
 
 /* Regras de sintaxe (Monokai) */
-.highlight .nt { color: #0b8585; } /* nome da tag */
-.highlight .na { color: #445588; font-weight: bold; }/* atributo */
-.highlight .s  { color: #df1c4d; } /* valor do atributo */
-.highlight .c  { color: #75715E; font-style: italic; } /* comentários */
+.highlight .nt { color: #df1c4d; } /* nome da tag */
+.highlight .na { color: #0040ff; }/* atributo */ 
+.highlight .s  { color: #0b8585; } /* valor do atributo */
+.highlight .c  { color: #0b8585; font-style: italic; } /* comentários */
 .highlight .m  { color: #000000; } /* números */
 .highlight .k  { color: #F92672; } /* palavras-chave */
 .highlight .o  { color: #F92672; } /* operadores */
-
-
-
-
 
 
 

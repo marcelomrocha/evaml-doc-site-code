@@ -12,6 +12,8 @@
         <link rel="prev" href="../evaml/">
       
       
+        <link rel="next" href="../commands/overview/">
+      
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
@@ -373,7 +375,7 @@
   
   
   <span class="md-ellipsis">
-    Commands
+    EvaML - Commands
     
   </span>
   
@@ -384,7 +386,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Commands
+            EvaML - Commands
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -395,7 +397,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../comandos/index.md" class="md-nav__link">
+      <a href="../commands/overview/" class="md-nav__link">
         
   
   
@@ -418,12 +420,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../comandos/controle.md" class="md-nav__link">
+      <a href="../commands/voice/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Controle de fluxo
+    voice
     
   </span>
   
@@ -441,12 +443,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../comandos/io.md" class="md-nav__link">
+      <a href="../commands/random/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Entrada/Saída
+    random
     
   </span>
   
@@ -464,12 +466,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../comandos/funcoes.md" class="md-nav__link">
+      <a href="../commands/wait/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Funções
+    wait
     
   </span>
   
@@ -487,12 +489,81 @@
   
   
     <li class="md-nav__item">
-      <a href="../comandos/variaveis.md" class="md-nav__link">
+      <a href="../commands/talk/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Variáveis e Tipos
+    talk
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../commands/stop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    stop
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../commands/light/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    light
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../commands/goto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    goto
     
   </span>
   
@@ -778,9 +849,9 @@ and <code>&lt;macros&gt;</code>.</p>
 these parameters, it is possible to globally modify the operation of the script without having to directly change the definitions of its individual elements. Here is an example from the <code>&lt;settings&gt;</code> element.</p>
 <!-- hl_lines="2 3" -->
 <div class="highlight"><span class="filename">settings_example.xml</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">&lt;settings&gt;</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">&lt;voice</span><span class="w"> </span><span class="na">tone=</span><span class="s">&quot;en-US_AllisonV3Voice&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">&lt;lightEffects</span><span class="w"> </span><span class="na">mode=</span><span class="s">&quot;ON&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nt">&lt;audioEffects</span><span class="w"> </span><span class="na">mode=</span><span class="s">&quot;ON&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&lt;voice</span><span class="w"> </span><span class="na">tone=</span><span class="s">&quot;en-US_AllisonV3Voice&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">&lt;lightEffects</span><span class="w"> </span><span class="na">mode=</span><span class="s">&quot;ON&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">&lt;audioEffects</span><span class="w"> </span><span class="na">mode=</span><span class="s">&quot;ON&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nt">&lt;/settings&gt;</span>
 </code></pre></div>
 <h2 id="script-section">Script Section<a class="headerlink" href="#script-section" title="Permanent link">&para;</a></h2>

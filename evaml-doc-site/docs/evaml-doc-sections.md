@@ -48,9 +48,9 @@ these parameters, it is possible to globally modify the operation of the script 
 <!-- hl_lines="2 3" -->
 ```xml title="settings_example.xml" linenums="0"
 <settings>
-    <voice tone="en-US_AllisonV3Voice" />
-    <lightEffects mode="ON" />
-    <audioEffects mode="ON" />
+  <voice tone="en-US_AllisonV3Voice" />
+  <lightEffects mode="ON" />
+  <audioEffects mode="ON" />
 </settings>
 ```
 
